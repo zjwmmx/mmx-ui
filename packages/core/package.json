@@ -1,0 +1,25 @@
+{
+  "name": "@app/core",
+  "version": "1.0.0",
+  "description": "",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    },
+    "./dist/index.css": {
+      "require": "./dist/index.css",
+      "import": "./dist/index.css"
+    }
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "vue": "^3.3.4"
+  }
+}

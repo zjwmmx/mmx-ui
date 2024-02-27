@@ -1,0 +1,93 @@
+$flex-position: (
+  c: center,
+  e: flex-end,
+  s: flex-start,
+  a: space-around,
+  b: space-between
+);
+
+$flex-direction: (
+  h: initial,
+  v: column
+);
+
+$flex-wrap: (
+  i: initial,
+  w: wrap
+);
+
+@mixin flex($align: c, $just: c, $wrap: h, $direction: i) {
+  $a: $map-get($flex-position, $align);
+  $j: $map-get($flex-position, $just);
+  $w: $map-get($flex-wrap, $wrap);
+  $d: $map-get($flex-direction, $direction);
+
+  display: flex;
+  align-items: $a;
+  justify-content: $j;
+  flex-direction: $d;
+  flex-wrap: $w;
+}
+
+// 省略号
+@mixin ellipsis($line: 1) {
+  @if $line == 1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+}
+
+@mixin scrollbar() {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-resizer {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &::-webkit-scrollbar-track:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &::-webkit-scrollbar-track:active {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
