@@ -1,0 +1,47 @@
+{
+  "hash": "d234f8f2",
+  "browserHash": "68073006",
+  "optimized": {
+    "vue": {
+      "src": "../../../../../../node_modules/.pnpm/vue@3.3.4/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "2c212367",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../../../../node_modules/.pnpm/@vue+devtools-api@6.5.0/node_modules/@vue/devtools-api/lib/esm/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "90120d4b",
+      "needsInterop": false
+    },
+    "ant-design-vue": {
+      "src": "../../../../../../node_modules/.pnpm/registry.npmmirror.com+ant-design-vue@3.2.3_vue@3.3.4/node_modules/ant-design-vue/es/index.js",
+      "file": "ant-design-vue.js",
+      "fileHash": "78cc2705",
+      "needsInterop": false
+    },
+    "dayjs": {
+      "src": "../../../../../../node_modules/.pnpm/registry.npmmirror.com+dayjs@1.11.9/node_modules/dayjs/dayjs.min.js",
+      "file": "dayjs.js",
+      "fileHash": "6a2fcebe",
+      "needsInterop": true
+    },
+    "lodash": {
+      "src": "../../../../../../node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+      "file": "lodash.js",
+      "fileHash": "67854cc4",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-4O2ME6PK": {
+      "file": "chunk-4O2ME6PK.js"
+    },
+    "chunk-YJHMXY3W": {
+      "file": "chunk-YJHMXY3W.js"
+    },
+    "chunk-5WWUZCGV": {
+      "file": "chunk-5WWUZCGV.js"
+    }
+  }
+}
