@@ -4,6 +4,12 @@
   "description": "demo",
   "type": "module",
   "main": "index.js",
+  "author": "zjw",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zjwmmx/mmx-ui"
+  },
   "scripts": {
     "dev": "npm run clean-dist && rollup --config rollup.config.js --watch",
     "build-css": "gulp buildCSS",
