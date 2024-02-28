@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "@mmxzjw/base",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "exports": {
@@ -14,9 +14,12 @@
       "import": "./dist/index.css"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zjwmmx/mmx-ui/tree/master/packages/base"
+    "url": "https://github.com/zjwmmx/mmx-ui"
   },
   "files": [
     "dist",

@@ -1,10 +1,10 @@
 {
   "private": false,
   "name": "@mmxzjw/component",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "",
   "type": "module",
-  "exports":{
+  "exports": {
     ".": {
       "require": "./dist/index.umd.js",
       "import": "./dist/index.es.js"
@@ -14,13 +14,16 @@
       "import": "./dist/index.css"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist",
     "package.json"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/zjwmmx/mmx-ui/tree/master/packages/components"
+    "url": "https://github.com/zjwmmx/mmx-ui"
   },
   "keywords": [],
   "license": "ISC",

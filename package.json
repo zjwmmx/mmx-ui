@@ -23,7 +23,7 @@
     "docs:preview": "pnpm --filter doc run docs:preview",
     "preview": "rollup preview",
     "clean-dist": "rm -rf packages/*/dist",
-    "publish": "pnpm -r publish --access public"
+    "publish": "node commands/publish.js"
   },
   "dependencies": {
     "@app/base": "workspace:^1.0.0",
