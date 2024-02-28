@@ -1,6 +1,7 @@
 {
-  "name": "@mmx-ui/core",
-  "version": "0.0.2",
+  "private": false,
+  "name": "@mmxzjw/core",
+  "version": "0.0.1",
   "description": "",
   "exports": {
     ".": {
@@ -16,6 +17,10 @@
     "dist",
     "package.json"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zjwmmx/mmx-ui/tree/master/packages/core"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {

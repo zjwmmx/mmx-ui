@@ -10,6 +10,10 @@
     "type": "git",
     "url": "https://github.com/zjwmmx/mmx-ui"
   },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "scripts": {
     "dev": "npm run clean-dist && rollup --config rollup.config.js --watch",
     "build-css": "gulp buildCSS",
@@ -18,7 +22,8 @@
     "dev:server": "pnpm --filter server run start:dev",
     "docs:preview": "pnpm --filter doc run docs:preview",
     "preview": "rollup preview",
-    "clean-dist": "rm -rf packages/*/dist"
+    "clean-dist": "rm -rf packages/*/dist",
+    "publish": "pnpm -r publish --access public"
   },
   "dependencies": {
     "@app/base": "workspace:^1.0.0",

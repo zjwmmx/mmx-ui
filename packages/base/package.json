@@ -1,10 +1,22 @@
 {
-  "name": "@mmx-ui/base",
-  "version": "0.0.2",
+  "private": false,
+  "name": "@mmxzjw/base",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    },
+    "./dist/index.css": {
+      "require": "./dist/index.css",
+      "import": "./dist/index.css"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zjwmmx/mmx-ui/tree/master/packages/base"
   },
   "files": [
     "dist",

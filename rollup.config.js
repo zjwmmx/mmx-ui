@@ -9,7 +9,7 @@ import terser from '@rollup/plugin-terser'
 import copy from 'rollup-plugin-copy'
 import postcss from 'rollup-plugin-postcss'
 import autoprefixer from 'autoprefixer'
-import postcssModules from 'postcss-modules';
+import postcssModules from 'postcss-modules'
 // import sass from 'sass'
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url))
@@ -143,7 +143,7 @@ function generateRollupConfig(packageName) {
 //             // implementation: sass
 //           }
 //         },
-        
+
 //         // extensions: ['.scss'],
 //       })
 //     ],
@@ -154,5 +154,5 @@ function generateRollupConfig(packageName) {
 export default [
   ...getPackageNames().map((packageName) => {
     return generateRollupConfig(packageName)
-  }),
+  })
 ]
