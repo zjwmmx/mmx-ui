@@ -1,6 +1,6 @@
 {
   "name": "@mmx-ui/component",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "",
   "type": "module",
   "exports":{
@@ -13,6 +13,10 @@
       "import": "./dist/index.css"
     }
   },
+  "files": [
+    "dist",
+    "package.json"
+  ],
   "keywords": [],
   "license": "ISC",
   "dependencies": {
