@@ -1,5 +1,8 @@
 import { defineConfig } from 'vitepress'
 import VueJsx from '@vitejs/plugin-vue-jsx'
+import { demoblockPlugin, demoblockVitePlugin } from 'vitepress-theme-demoblock'
+import { nav } from './config/nav'
+import { sidebar } from './config/sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -14,70 +17,25 @@ export default defineConfig({
       lang: 'en'
     },
     fr: {
-      label: 'French',
-      lang: 'fr', // optional, will be added  as `lang` attribute on `html` tag
-      link: '/fr/guide' // default /fr/ -- shows on navbar translations menu, can be external
-
-      // other locale specific properties...
+      label: '中文',
+      lang: 'zh'
     }
   },
+  head: [['link', { rel: 'icon', href: '/favicon.png' }]],
 
   themeConfig: {
-    head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+    logo: '../../favicon.ico',
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: '文档', link: '/' },
-      { text: '组件', link: '/markdown-examples' },
-      {
-        text: '语言',
-        items: [
-          { text: 'en', link: '/markdown-examples' },
-          { text: '中文', link: '/markdown-examples' }
-        ]
-      },
-      { text: '指导', link: '/components/' }
-    ],
-
-    sidebar: {
-      'markdown-examples': [
-        {
-          text: 'Examples',
-          items: [
-            { text: 'Markdown Examples', link: '/markdown-examples' },
-            { text: 'Runtime API Examples', link: '/api-examples' }
-          ]
-        }
-      ],
-      components: [
-        {
-          text: '指导',
-          items: [
-            { text: '时间段选择器', link: '/components/time-schedule' },
-            { text: '指导2', link: '/components/guide-two' }
-          ]
-        }
-      ]
-    },
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    nav,
+    sidebar,
+    socialLinks: [{ icon: 'github', link: 'https://github.com/zjwmmx/mmx-ui' }]
+  },
+  markdown: {
+    config: (md) => {
+      md.use(demoblockPlugin)
+    }
   },
   vite: {
-    plugins: [VueJsx()]
-    // resolve: {
-    //   alias: {
-    //     styles: path.resolve(__dirname, '../../../../styles'),
-    //   },
-    // },
-    // css: {
-    //   preprocessorOptions: {
-    //     scss: {
-    //       additionalData: `
-    //       @use "sass:math";
-    //       @import "styles/include/index.scss";`,
-    //     },
-    //   },
-    // },
+    plugins: [VueJsx(), demoblockVitePlugin()]
   }
 })

@@ -10,6 +10,13 @@ export const components = {
   TimeSchedule
 }
 
+export {
+  customTimerPicker,
+  component,
+  customComponent,
+  TimeSchedule
+}
+
 const plugin = {
   install(app) {
     Object.values(components).forEach((item) => {

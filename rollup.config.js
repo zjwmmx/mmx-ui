@@ -32,11 +32,17 @@ function generateOutputConfig(packageName, format, packageJson) {
   const outputDir = path.resolve(packagesDir, packageName, 'dist')
   // 获取 package.json 中的名称字段
   const packagePrefix = packageJson.name || packageName
+  let fileName = `index.${format}.js`
+  if(format === 'es') {
+    fileName = `index.mjs`
+  } else if(format === 'cjs') {
+    fileName = `index.cjs`
+  }
 
   return {
     inlineDynamicImports: true,
     extend: true,
-    file: `${outputDir}/index.${format}.js`,
+    file: `${outputDir}/${fileName}`,
     format,
     name: packagePrefix,
     sourcemap: false,
@@ -63,7 +69,8 @@ function generateRollupConfig(packageName) {
     output: [
       generateOutputConfig(packageName, 'es', packageJson),
       generateOutputConfig(packageName, 'umd', packageJson),
-      generateOutputConfig(packageName, 'iife', packageJson)
+      generateOutputConfig(packageName, 'iife', packageJson),
+      generateOutputConfig(packageName, 'cjs', packageJson)
     ],
     plugins: [
       resolve({ extensions }),
@@ -79,7 +86,6 @@ function generateRollupConfig(packageName) {
       postcss({
         // 修改 extract 选项，将 CSS 提取到单独的文件
         extract: path.resolve(packagesDir, packageName, 'dist/index.css'),
-        // extract: path.resolve(packagesDir, packageName, 'dist/index.css'),
         plugins: [autoprefixer()],
         // 压缩
         minimize: true,

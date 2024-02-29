@@ -1,20 +1,12 @@
 # 指南首页
-```js
-console.log('时间段选择器')
-```
 
-<TimeSchedule />
-<CustomComponent />
-
-::: details 查看代码
+:::demo
 ```vue
 <template>
-  <timeSchedule />
+  <TimeSchedule />
 </template>
 <script setup>
-    import { timeSchedule } from '@app/component'
+    import { TimeSchedule } from '@mmxzjw/component'
 </script>
 ```
 :::
-
-console.log('时间段选择器')

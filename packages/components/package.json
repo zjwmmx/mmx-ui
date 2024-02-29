@@ -1,13 +1,12 @@
 {
   "private": false,
   "name": "@mmxzjw/component",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "description": "",
-  "type": "module",
   "exports": {
     ".": {
       "require": "./dist/index.umd.js",
-      "import": "./dist/index.es.js"
+      "import": "./dist/index.mjs"
     },
     "./dist/index.css": {
       "require": "./dist/index.css",
