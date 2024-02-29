@@ -3,13 +3,13 @@
 layout: home
 
 hero:
-  name: zw-plus
-  text: 用于客户端网页端组件库的文档
-  tagline: vue3二次封装的组件库
+  name: zjwmmx的个人博客
+  text: 自我学习的一个平台
+  tagline: 前端小菜鸡的文档开发，这里不但有组件库的使用文档，还有技术相关的文章。
   pageClass: custom-page-class
   image:
-    src: https://img.shields.io/badge/vue-3.2.36-brightgreen.svg
-    alt: t-ui-plus
+    src: ./public/web.jpg
+    alt: zjwmmx
   actions:
     - theme: brand
       text: 快速开始

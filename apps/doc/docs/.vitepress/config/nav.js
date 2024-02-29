@@ -1,5 +1,5 @@
 export const nav = [
-  { text: '文档', link: '/' },
-  { text: '指导', link: '/guide/' },
-  { text: '组件', link: '/components/' }
+  { text: '首页', link: '/' },
+  { text: '文档', link: '/doc/', activeMatch: '/doc/' },
+  { text: '组件', link: '/components/', activeMatch: '/components/' }
 ]

@@ -1,0 +1,56 @@
+{
+  "hash": "80906623",
+  "browserHash": "57c633d3",
+  "optimized": {
+    "vue": {
+      "src": "../../../../../../node_modules/.pnpm/vue@3.3.4/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "86a14006",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../../../../node_modules/.pnpm/@vue+devtools-api@6.5.0/node_modules/@vue/devtools-api/lib/esm/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "325df4d0",
+      "needsInterop": false
+    },
+    "ant-design-vue": {
+      "src": "../../../../../../node_modules/.pnpm/registry.npmmirror.com+ant-design-vue@3.2.3_vue@3.3.4/node_modules/ant-design-vue/es/index.js",
+      "file": "ant-design-vue.js",
+      "fileHash": "179f9078",
+      "needsInterop": false
+    },
+    "naive-ui": {
+      "src": "../../../../../../node_modules/.pnpm/registry.npmmirror.com+naive-ui@2.34.4_vue@3.3.4/node_modules/naive-ui/es/index.js",
+      "file": "naive-ui.js",
+      "fileHash": "a3a63464",
+      "needsInterop": false
+    },
+    "lodash": {
+      "src": "../../../../../../node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+      "file": "lodash.js",
+      "fileHash": "316a32de",
+      "needsInterop": true
+    },
+    "dayjs": {
+      "src": "../../../../../../node_modules/.pnpm/registry.npmmirror.com+dayjs@1.11.9/node_modules/dayjs/dayjs.min.js",
+      "file": "dayjs.js",
+      "fileHash": "c06cf5d8",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-I3HQW6T2": {
+      "file": "chunk-I3HQW6T2.js"
+    },
+    "chunk-4O2ME6PK": {
+      "file": "chunk-4O2ME6PK.js"
+    },
+    "chunk-YJHMXY3W": {
+      "file": "chunk-YJHMXY3W.js"
+    },
+    "chunk-5WWUZCGV": {
+      "file": "chunk-5WWUZCGV.js"
+    }
+  }
+}
